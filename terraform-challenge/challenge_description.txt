@@ -1,0 +1,8 @@
+1. create an ec2
+2. add a sec group
+ 2a. ingress rules:80,443,25,3306,3389,8080
+ 2b. ingress rules:443,8443
+3. attach a public IP
+ 4a. output our public IP
+ 4b. check expected ports to be open
+ 4c. confirm open port
