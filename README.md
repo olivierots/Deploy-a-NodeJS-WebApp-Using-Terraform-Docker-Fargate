@@ -3,13 +3,15 @@
 ===========
 
 ##  Project description  ##
+```
 This a nodejs web app thats been built using Docker
 When an end user browse to the website, the web server takes that request
 and calls the requested api as described in the server.js file
 e.g /api/users endpoint. which will then load & display all the information 
 from the db.json file on a web browser. 
-
+```
 ##  high level technical explanation  ##
+```
 ==== Docker part
 * download a node base image & built the custom image on top 
 * docker exposes port 3000, configure the container then start the app (see dockerfile) 
@@ -35,24 +37,26 @@ from the db.json file on a web browser.
 ==== what happens in the case of a software upgrade ?
 * whenever there is a new image, all i have to do, is to push that image to the ecr with a new
   version.
-
+```
 ##  other important technical definitions to better understand this project  ##
-
-## ECR: elastic container registry ##
+```
+* ECR: elastic container registry 
 ECR gives you an environment where you can configure your docker container to execute it in aws 
 it handles everything from installing the docker deamon for the container to run , task def etc. 
 ECR is integrated with ECS & transfers your container images over HTTPS and automatically encrypts
 your images at rest.You can easily push your container images to Amazon ECR using the Docker CLI
 from your development machine, and Amazon ECS can pull them directly for production deployments.
 
-## ECS: elastic container service ##
+* ECS: elastic container service 
 Highly scalable, high performance container management service that supports Docker containers
 and allows you to easily run applications on a managed cluster of Amazon EC2 instances
 ECS eliminates the need for you to install, operate, and scale your own cluster management 
 infrastructure.Amazon ECS maintains application availability and allows you to scale your 
 containers up or down to meet your application's capacity requirements.
+```
 
 ## ECS is implemented in aws in two ways: EC2 & Fargate ##
+```
 1. EC2:
 launch a docker container on aws with ecs
 has support for ALB & ASG
@@ -63,5 +67,6 @@ amazon proviison your ec2 (serverless)
 no need to worry about ec2 instances
 so you no longer have to provision, configure and scale clusters of VMs to run containers 
 
+```
 
 
