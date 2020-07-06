@@ -9,6 +9,15 @@ When an end user browse to the website, the web server takes that request
 and calls the requested api as described in the server.js file
 e.g /api/users endpoint. which will then load & display all the information 
 from the db.json file on a web browser. 
+
+## architecture of the network ##
+1. I have an application load balancer pointing to an ECS cluster which has 4 containers running
+2. The containers will doanload the image from the ECR which an aws repo where container's images are stored in
+3. ECS pulls the images and run as a dokcer containers
+4. All logs will be pushed from the ecs containers to cloudwatch 
+5. Auto scaling policies atatched to the ECR are also in place for capacity management
+6. The docker image will be stored in docker repo called ecs-service in aws which is ideal for private images
+
 ```
 ##  high level technical explanation  ##
 ```
@@ -51,6 +60,9 @@ and allows you to easily run applications on a managed cluster of Amazon EC2 ins
 ECS eliminates the need for you to install, operate, and scale your own cluster management 
 infrastructure.Amazon ECS maintains application availability and allows you to scale your 
 containers up or down to meet your application's capacity requirements.
+
+* Docker: software deployment platform for deploying applications, applications are packaged in
+  containers, it can run on any OS & containers can easily scale. 
 ```
 
 ## ECS is implemented in aws in two ways: EC2 & Fargate ##
