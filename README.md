@@ -2,7 +2,7 @@
 
 ===========
 
-##  Project description  ##
+##  Project 1 description  ##
 ```
 This a nodejs web app thats been built using Docker
 When an end user browse to the website, the web server takes that request
@@ -69,4 +69,15 @@ so you no longer have to provision, configure and scale clusters of VMs to run c
 
 ```
 
-
+##  Project 2 (simple terraform challenge)  ##
+```
+1. created an ec2
+2. created a sec. group with the below rules
+   2a. ingress rules:80,443,25,3306,3389,8080
+   2b. ingress rules:443,8443
+3. attached a public IP
+4. terraform will do the below
+   4a. output the public IP
+   4b. check the expected ports to be open
+   4c. confirm open port
+```
