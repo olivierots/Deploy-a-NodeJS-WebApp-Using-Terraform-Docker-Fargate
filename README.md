@@ -72,12 +72,13 @@ so you no longer have to provision, configure and scale clusters of VMs to run c
 ##  Project 2 (simple terraform challenge)  ##
 ```
 1. created an ec2
-2. created a sec. group with the below rules
+2. created a sec. group with the below rules using variables
    2a. ingress rules:80,443,25,3306,3389,8080
    2b. ingress rules:443,8443
 3. attached a public IP
-4. terraform will do the below
-   4a. output the public IP
-   4b. check the expected ports to be open
-   4c. confirm open port
+4. created an elastic IP
+5. terraform will output the below
+   5a. output the public IP
+   5b. check the expected ports to be open
+   5c. confirm open port
 ```
