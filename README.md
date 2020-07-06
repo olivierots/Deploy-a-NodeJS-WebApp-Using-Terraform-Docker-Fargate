@@ -20,8 +20,8 @@ from the db.json file on a web browser.
 * created an ECR repo 
 * tagged my docker image to the uri for the ECR repo 
 * pushed the image to the ECR for ECS to run it as docker container
-* the ECS cluster will be running the images which is located in the ecr repo
-* built an ecs cluster (fargate) with 3 docker instances for the docker image
+* the ECS cluster will be running the image which is located in the ECR repo
+* built an ECS cluster (fargate) with 3 docker instances for my app
 * The ALB will be placed in front of the service to route, split users requests
   accross the 4 configured containers (ECS cluster).
 * auto scaling has been configured to run at least 4 EC2 instances & when the cpu threshold
@@ -31,8 +31,6 @@ from the db.json file on a web browser.
 * I've also configured the ECS to send logs to cloudwatch dashboard, cloudwatch triggers will
   help us know the auto scaling policies 
 * The docker image is stored in the docker repo called ecs-service in aws (private image repo)
-* confugured an infrastructure with load balancers, listeners, a target group routing traffic
-  to different ecs containers
   
 ==== what happens in the case of a software upgrade ?
 * whenever there is a new image, all i have to do, is to push that image to the ecr with a new
