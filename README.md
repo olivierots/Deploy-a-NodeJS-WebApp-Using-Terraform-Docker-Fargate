@@ -36,7 +36,7 @@ from the db.json file on a web browser.
 * whenever there is a new image, all i have to do, is to push that image to the ecr with a new
   version.
 
-## other important technical definitions to better understand this project ##
+# other important technical definitions to better understand this project #
 
 # ECR: elastic container registry
 ECR gives you an environment where you can configure your docker container to execute it in aws 
@@ -45,7 +45,7 @@ ECR is integrated with ECS & transfers your container images over HTTPS and auto
 your images at rest.You can easily push your container images to Amazon ECR using the Docker CLI
 from your development machine, and Amazon ECS can pull them directly for production deployments.
 
-# ECS: elastic container service
+# ECS: elastic container service #
 Highly scalable, high performance container management service that supports Docker containers
 and allows you to easily run applications on a managed cluster of Amazon EC2 instances
 ECS eliminates the need for you to install, operate, and scale your own cluster management 
@@ -58,7 +58,7 @@ launch a docker container on aws with ecs
 has support for ALB & ASG
 user should provision ec2 where container will be run by ecs 
 
-Fargate:
+2. Fargate:
 amazon proviison your ec2 (serverless)
 no need to worry about ec2 instances
 so you no longer have to provision, configure and scale clusters of VMs to run containers 
