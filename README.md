@@ -22,7 +22,7 @@ from the db.json file on a web browser.
 ##  high level technical explanation  ##
 ```
 ==== Docker part
-* download a node base image & built the custom image on top 
+* downloaded a node base image & built the custom image on top 
 * docker exposes port 3000, configure the container then start the app (see dockerfile) 
 
 ==== Terraform part
