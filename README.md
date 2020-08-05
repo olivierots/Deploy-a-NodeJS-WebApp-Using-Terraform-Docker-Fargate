@@ -4,7 +4,7 @@
 
 ##  Project 1 description  ##
 ```
-This a nodejs web app thats been built using Docker
+This is a nodejs web app thats been built using Docker
 When an end user browse to the website, the web server takes that request
 and calls the requested api as described in the server.js file
 e.g /api/users endpoint. which will then load & display all the information 
@@ -12,18 +12,18 @@ from the db.json file on a web browser.
 
 ## architecture of the network ##
 1. I have an application load balancer pointing to an ECS cluster which has 4 containers running
-2. The containers will doanload the image from the ECR which an aws repo where container's images are stored in
+2. The containers will doanload the image from the ECR which an aws repo where the container's images are stored in
 3. ECS pulls the images and run as a dokcer containers
 4. All logs will be pushed from the ecs containers to cloudwatch 
-5. Auto scaling policies atatched to the ECR are also in place for capacity management
+5. Auto scaling policies attached to the ECR are also in place for capacity management
 6. The docker image will be stored in docker repo called ecs-service in aws which is ideal for private images
 
 ```
 ##  high level technical explanation  ##
 ```
 ==== Docker part
-* downloaded a node base image & built the custom image on top 
-* docker exposes port 3000, configure the container then start the app (see dockerfile) 
+* downloaded a node base image & built the custom image on top of it
+* docker exposes port 3000 - see dockerfile for container configs
 
 ==== Terraform part
 * created an ECR repo 
