@@ -2,7 +2,7 @@
 
 ===========
 
-======  Project 1 description  ======
+## ======  Project 1 description  ====== ##
 ```
 This is a nodejs web app thats been built using Docker
 When an end user browse to the website, the web server takes that request
