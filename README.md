@@ -1,7 +1,5 @@
 ## terraform-docker-fargate-aws-nodejs project 2020 ##
 
-===========
-
 ## ======  Project 1 description  ====== ##
 ```
 This is a nodejs web app thats been built using Docker
