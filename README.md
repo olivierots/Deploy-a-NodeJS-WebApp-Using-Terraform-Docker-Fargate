@@ -1,6 +1,6 @@
-## terraform-docker-fargate-aws-nodejs project 2020 ##
+# Terraform-Docker-Fargate-aws-Nodejs-WebApp Project #
 
-## ======  Project 1 description  ====== ##
+# ======  Project 1 description  ====== #
 ```
 This is a nodejs web app thats been built using Docker
 When an end user browse to the website, the web server takes that request
@@ -17,7 +17,7 @@ from the db.json file on a web browser.
 6. The docker image will be stored in docker repo called ecs-service in aws which is ideal for private images
 
 ```
-##  high level technical explanation  ##
+#  Technical Implementation  #
 ```
 ==== Docker part
 * downloaded a node base image & built the custom image on top of it
@@ -43,7 +43,7 @@ from the db.json file on a web browser.
 * whenever there is a new image, all i have to do, is to push that image to the ecr with a new
   version.
 ```
-##  other important technical definitions to better understand this project  ##
+#  Other important technical definitions to better understand this project  #
 ```
 * ECR: elastic container registry 
 ECR gives you an environment where you can configure your docker container to execute it in aws 
@@ -77,7 +77,7 @@ so you no longer have to provision, configure and scale clusters of VMs to run c
 
 ```
 
-## ====== Project 2 (simple terraform challenge)  ====== ##
+# ====== Project 2 (simple terraform challenge)  ====== #
 ```
 1. created an ec2
 2. created a sec. group with the below rules using variables
