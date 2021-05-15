@@ -1,6 +1,6 @@
 # Terraform-Docker-Fargate-aws-Nodejs-WebApp Project 
 
-## ======  Project 1 description  ====== 
+## == Project 1 description  == 
 ```
 This is a nodejs web app thats been built using Docker
 When an end user browse to the website, the web server takes that request
@@ -77,7 +77,7 @@ so you no longer have to provision, configure and scale clusters of VMs to run c
 
 ```
 
-## ====== Project 2 (simple terraform challenge)  ====== 
+## == Project 2 (simple terraform challenge) == 
 ```
 1. created an ec2
 2. created a sec. group with the below rules using variables
